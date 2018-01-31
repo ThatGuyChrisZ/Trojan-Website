@@ -1,0 +1,60 @@
+<html>
+   <head>
+       <meta charset = "UTF-8">
+       <title>Trojan Coding  Hub</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="hps.css">
+</html>
+<div id = "mh" class = "mh">
+    <p style= "font-size:48px "> Trojan Coding Hub Docs </p>
+</div>
+<div id = "sb" class = "sb">
+    
+    <p style = "font-size: 30" id = "edit"> Useful Stuff </p>
+    <a href = "index.html" style = "color: #f9ca03">Home</a>
+    <a href = "docs.html" style = "color: #f9ca03">Documentation</a>
+   <a href = "about" style = "color: #f9ca03">about</a>
+    <script>
+    function myfunction(){
+       document.getElementById("edit").innerHTML = "Hello World";
+        }
+        </script>
+</div>
+<div id = "mb" class = "mb">
+    <center><font size = "24">Want to add?</font></center>
+   <center> <textarea style = "text-align: left" rows="20" cols="100" id = "test5" value = "enter here">
+
+       </textarea></center>
+    
+    <center> <input type = "submit" id = "sub1" value = "submit"> </center>
+</div>
+<script>
+    document.getElementById("sub1").addEventListener("click", myfunction)
+var input1 = document.getElementById("sub1").value;
+     var currentdiv = 1;
+    
+    
+    
+        
+        var div = document.createElement("div");
+function myfunction (){
+   
+    var para = document.createElement("div" + currentdiv);
+    var test2 = document.getElementById("test5").value;
+    var element = document.getElementById("mb");
+    para.setAttribute("id", "div" + currentdiv)
+    para.setAttribute("value", test2 + "!!!")
+    para.setAttribute("style", "background: #000000")
+        para.style.width = "100px";
+    para.style.height = "100px";
+    para.style.color= "#ffffff";
+    
+    para.innerHTML = test2
+
+    element.appendChild(para);
+    console.log(currentdiv)
+    currentdiv++
+    
+}
+    
+</script>
