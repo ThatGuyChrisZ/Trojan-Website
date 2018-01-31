@@ -25,9 +25,7 @@
    function myfunction (){
       
        setTimeout(myfunc2, "200");
-      setTimeout(myfunc3, "400");
-      setTimeout(myfunc4, "600");
-      setTimeout(myfunc5, "800");
+     
       var tw = document.getElementById("sb").style.width;
       
       
@@ -35,31 +33,15 @@
        var NW;
        var x= 0;
    
-         
+         while(x !== 10){
             function myfunc2(){
          NW = OW - 100
        document.getElementById("sb").style.width - 10;
        x++
            console.log(x)
             }
-      function myfunc3(){
-         NW = OW - 100
-       document.getElementById("sb").style.width - 10;
-       x++
-           console.log(x)
-            }
-      function myfunc4(){
-         NW = OW - 100
-       document.getElementById("sb").style.width -10;
-       x++
-           console.log(x)
-            }
-      function myfunc5(){
-         NW = OW - 100
-       document.getElementById("sb").style.width - 10 ;
-       x++
-           console.log(x)
-            }
+         }
+     
          
       
        
