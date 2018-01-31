@@ -24,6 +24,9 @@
         document.getElementById("menue1").addEventListener("click", myfunction)
    function myfunction (){
       setTimeout(myfunc2, "100");
+      setTimeout(myfunc3, "200");
+      setTimeout(myfunc4, "300");
+      setTimeout(myfunc5, "400");
       var tw = document.getElementById("sb").style.width;
       
       
@@ -31,14 +34,32 @@
        var NW;
        var x= 0;
    
-         while (x !== 10){
+         
             function myfunc2(){
          NW = OW - 100
        document.getElementById("sb").style.width = tw - 20;
        x++
            console.log(x)
             }
-         }
+      function myfunc3(){
+         NW = OW - 100
+       document.getElementById("sb").style.width = tw - 20;
+       x++
+           console.log(x)
+            }
+      function myfunc5(){
+         NW = OW - 100
+       document.getElementById("sb").style.width = tw - 20;
+       x++
+           console.log(x)
+            }
+      function myfunc2(){
+         NW = OW - 100
+       document.getElementById("sb").style.width = tw - 20;
+       x++
+           console.log(x)
+            }
+         
   
          
       
