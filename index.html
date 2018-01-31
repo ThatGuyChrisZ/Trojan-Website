@@ -29,6 +29,7 @@
       setTimeout(myfunc4, "300");
       setTimeout(myfunc5, "400");
       setTimeout(myfunc6, "500");
+      
       var tw = document.getElementById("sb").style.width;
       
       
@@ -60,13 +61,23 @@
        document.getElementById("sb").style.width = 165 ;
        x++
            console.log(x)
-         nn -= 100
+         nn -= 5
             }
       function myfunc6(){
          NW = OW - 100
        document.getElementById("sb").style.width = nn ;
        x++
            console.log(x)
+         setTimeout(myfunc7, "50");
+         function myfunc7(){
+            while(x!== 42){
+             document.getElementById("sb").style.width = nn ;
+       x++
+           console.log(x)
+        nn -= 5
+            }
+         
+         }
             }
          
       
