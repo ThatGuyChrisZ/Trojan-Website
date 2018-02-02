@@ -1,4 +1,4 @@
-
+//Side Bar openning animation.
    
         document.getElementById("menue1").addEventListener("click", myfunction)
 var status = "open"
