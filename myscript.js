@@ -774,7 +774,7 @@ var status = "open"
       function myfunc42(){
          NW = OW - 100
        document.getElementById("sb").style.width = nn ;
-         document.getElementById("mb").style.left = nn ;
+         document.getElementById("mb").style.left = nn + 10 ;
        x++
            console.log(x)
          nn += 5
