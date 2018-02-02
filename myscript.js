@@ -389,6 +389,8 @@ var status = "open"
            console.log(x)
          nn -= 5
          status = "closed"
+         document.getElementById("menue1").value = "open?" ;
+         
             }
      }
        if(status === "closed"){
@@ -777,6 +779,7 @@ var status = "open"
            console.log(x)
          nn += 5
          status = "open"
+         document.getElementById("menue1").value = "close?" ;
             }
      }
       
