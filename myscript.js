@@ -1,26 +1,4 @@
-<html>
-   <head>
-       <meta charset = "UTF-8">
-       <title>Trojan Coding  Hub</title>
-    </head>
-    <link rel="stylesheet" type="text/css" href="hps.css">
-</html>
-<div id = "mh" class = "mh">
-    <p style= "font-size:48px "> Trojan Coding Hub  </p>
-</div>
-<div id = "sb" class = "sb">
-    
-    <p style = "font-size: 30" id = "edit"> Useful Stuff </p>
-    <a href = "index.html" style = "color: #f9ca03">Home</a>
-    <a href = "docs.html" style = "color: #f9ca03">Documentation</a>
-   <a href = "about" style = "color: #f9ca03">about</a>
-    
-</div>
-<div id = "mb" class = "mb">
-    <left> <input type = "submit" id = "menue1" value = "Close"></left>
-    <p> test </p>
-</div>
-<script>
+
    
         document.getElementById("menue1").addEventListener("click", myfunction)
    function myfunction (){
@@ -416,5 +394,5 @@
       
        
         }
-        </script>
+      
 
