@@ -26,7 +26,7 @@
 </div>
 <div id = "mb" class = "mb">
     <left> <input type = "submit" id = "menue1" value = "Close"></left>
-    <p> test </p>
+    <p id = "testing"> test </p>
 </div>
 <script src = "myscript.js">
    
@@ -34,5 +34,6 @@
 <script>
             $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=e2&output=csv").done(function(result){
                 alert(result);
+               document.getElementById("testing").innerHTML = result;
             });
         </script>
