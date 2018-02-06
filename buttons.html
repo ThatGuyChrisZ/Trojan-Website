@@ -32,6 +32,8 @@
    
         </script>
 <script>
+   var name;  
+   var html;
    
 
             $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=d2&output=csv").done(function(result){
@@ -39,8 +41,7 @@
                 console.log(result);
                
 if (result === "Button"){
-         var name;  
-   var html;
+         
     $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=c2&output=csv").done(function(result2){
 name = result2
        console.log(name);
