@@ -43,6 +43,7 @@ if (result === "Button"){
    var html;
     $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=c2&output=csv").done(function(result2){
 name = result2
+       console.log(name);
                 
                
 
@@ -50,6 +51,7 @@ name = result2
             });
    $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=e2&output=csv").done(function(result3){
 html = result3
+       console.log(html);
                 
                
 
