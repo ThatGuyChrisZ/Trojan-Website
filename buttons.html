@@ -39,6 +39,7 @@
    var idnum = 2;
    
 for ( var i = 0; i < 36; i++ ) {
+   setDelay2(i);
    setTimeout(myfunction98, 500);
    function myfunction98(){
       setDelay2(i);
@@ -68,7 +69,7 @@ html = result3
             });
    setTimeout(myfunction99, 300);
    function myfunction99(){
-      setDelay2(i)
+      setDelay(i)
       var newnum = idnum -1;
       console.log("The Value of para + newnum is: " + document.getElementById("para" + newnum))
       
