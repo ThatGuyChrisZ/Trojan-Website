@@ -41,8 +41,7 @@
 for ( var i = 0; i < 36; i++ ) {
    setTimeout(myfunction98, 500);
    function myfunction98(){
-   var para = document.createElement("p");
-   var element = document.getElementById("testing");
+   
             $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=d"+bc+"&output=csv").done(function(result){
 
                 console.log(result);
@@ -68,6 +67,8 @@ html = result3
             });
    setTimeout(myfunction99, 300);
    function myfunction99(){
+      var para = document.createElement("p");
+   var element = document.getElementById("testing");
    
       para.innerHTML = name + ": " + html;
      
