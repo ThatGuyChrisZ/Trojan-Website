@@ -37,6 +37,7 @@
    var loop = 1;
    var bc = 2;
    var idnum = 2;
+   var oldnum = 1;
    var newreader= 2;
    
 for ( var i = 0; i < 36; i++ ) {
@@ -72,9 +73,9 @@ newreader++
    function myfunction99(){
       setDelay(i)
       var newnum = idnum -1;
-      console.log("The Value of para + newnum is: " + document.getElementById("para" + newnum))
+      console.log("The Value of para + newnum is: " + document.getElementById("para" + oldnum).innerHtML)
       
-      if(html !== document.getElementById("para" + newnum)){
+      if(html !== document.getElementById("para" + oldnum).innerHTML){
       var para = document.createElement("p");
    var element = document.getElementById("testing");
    
