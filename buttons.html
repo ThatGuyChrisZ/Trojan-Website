@@ -36,7 +36,7 @@
    var html;
    var loop = 1;
    var bc = 2;
-   
+   var idnum = 2;
    
 for ( var i = 0; i < 36; i++ ) {
    setTimeout(myfunction98, 500);
@@ -73,8 +73,10 @@ html = result3
       para.innerHTML = name + ": " + html;
      
       element.appendChild(para);
-      para.setAttribute("id", "para" +bc)
+      para.setAttribute("id", "para" +idnum)
       console.log("child added")
+      cosole.log("element with id of " + idnum + " created")
+      idnum++
    }
 }
                if(!name){
