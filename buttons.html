@@ -37,6 +37,7 @@
    var loop = 1;
    var bc = 2;
    var idnum = 2;
+   var newreader= 2;
    
 for ( var i = 0; i < 36; i++ ) {
    setDelay2(i);
@@ -44,14 +45,14 @@ for ( var i = 0; i < 36; i++ ) {
    function myfunction98(){
       setDelay2(i);
    
-            $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=d"+idnum+"&output=csv").done(function(result){
+            $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=d"+newreader+"&output=csv").done(function(result){
 
                 console.log(result);
                console.log(bc)
                
 if (result === "Button"){
          
-    $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=c"+idnum+"&output=csv").done(function(result2){
+    $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=c"+newreader+"&output=csv").done(function(result2){
 name = result2
        console.log(name);
                 
@@ -59,13 +60,13 @@ name = result2
 
 
             });
-   $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=e"+idnum+"&output=csv").done(function(result3){
+   $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=e"+newreader+"&output=csv").done(function(result3){
 html = result3
        console.log(html);
                 
                
 
-
+newreader++
             });
    setTimeout(myfunction99, 300);
    function myfunction99(){
@@ -83,7 +84,7 @@ html = result3
       para.setAttribute("id", "para" +idnum)
       console.log("child added")
       console.log("element with id of " + idnum + " created")
-      
+      idnum++
       }
    }
 }
@@ -105,7 +106,7 @@ html = result3
       }
    
    }
-   idnum++
+   
 }
 function setDelay(i){
 setTimeout(function(){console.log(i)}, 300);
