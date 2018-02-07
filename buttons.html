@@ -40,9 +40,9 @@
    var oldnum = 1;
    var newreader= 2;
    
-for ( var i = 0; i < 36; i++ ) {
+
    setDelay2(i);
-   setTimeout(myfunction98, 500);
+   setInterval(myfunction98, 500);
    function myfunction98(){
       setDelay2(i);
    
@@ -69,7 +69,7 @@ html = result3
 
 newreader++
             });
-   setTimeout(myfunction99, 300);
+   setInterval(myfunction99, 300);
    function myfunction99(){
       setDelay(i)
       var newnum = idnum -1;
@@ -95,7 +95,7 @@ newreader++
                }
 
             });
-      setTimeout(myfunction100, 300);
+      setInterval(myfunction100, 300);
    function myfunction100(){
       setDelay(i);
    bc++
@@ -109,7 +109,7 @@ newreader++
    
    }
    
-}
+
 function setDelay(i){
 setTimeout(function(){console.log(i)}, 300);
 
