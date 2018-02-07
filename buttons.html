@@ -67,6 +67,7 @@ html = result3
             });
    setTimeout(myfunction99, 300);
    function myfunction99(){
+      setDelay2(i)
       var newnum = idnum -1;
       console.log("The Value of para + newnum is: " + document.getElementById("para" + newnum))
       
@@ -91,6 +92,7 @@ html = result3
             });
       setTimeout(myfunction100, 300);
    function myfunction100(){
+      setDelay(i);
    bc++
    }
       if(!name){
@@ -102,7 +104,14 @@ html = result3
    
    }
 }
+function setDelay(i){
+setTimeout(function(){console.log(i)}, 300);
 
+} 
+   function setDelay2(i){
+setTimeout(function(){console.log(i)}, 500);
+
+}
 
   
 
