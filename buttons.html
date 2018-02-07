@@ -36,7 +36,7 @@
    var html;
    var loop = 1;
    var bc = 2;
-   
+   var para = document.createElement("p");
 for ( var i = 0; i < 36; i++ ) {
             $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=d"+bc+"&output=csv").done(function(result){
 
@@ -63,6 +63,8 @@ html = result3
    setTimeout(myfunction99, 300);
    function myfunction99(){
    document.getElementById("testing").innerHTML = name + ": " + html;
+      para.innerHTML = name + ": " + html;
+      element.appendChild(para);
    }
 }
                if(!name){
@@ -72,6 +74,8 @@ html = result3
             });
    bc++
    console.log("i have looped" + i + " times")
+   
+   
 }
 
   
