@@ -32,7 +32,7 @@
    
         </script>
 <script>
-   var name;  
+        var name;  
    var html;
    var loop = 1;
    var bc = 2;
@@ -50,7 +50,7 @@
 
                 console.log(result);
                console.log(bc)
-               
+            });
 if (result === "Button"){
          
     $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=c"+newreader+"&output=csv").done(function(result2){
@@ -66,51 +66,7 @@ html = result3
        console.log(html);
                 
                
-
-newreader++
-            });
-   setInterval(myfunction99, 500);
-   function myfunction99(){
-    
-      var newnum = idnum -1;
-      if(idnum === 2){
-      console.log("The Value of para + newnum is: " + document.getElementById("para" + oldnum))
-      }
-      if(html !== document.getElementById("para" + oldnum)){
-      var para = document.createElement("p");
-   var element = document.getElementById("testing");
-   
-      para.innerHTML = name + ": " + html;
-     
-      element.appendChild(para);
-      para.setAttribute("id", "para" +idnum)
-      console.log("child added")
-      console.log("element with id of " + idnum + " created")
-      idnum++
-      }
-   }
+   });
 }
-               if(!name){
-               loop = 0;
-               }
-
-            });
-      setInterval(myfunction100, 500);
-   function myfunction100(){
-   
-   bc++
    }
-      if(!name){
-     console.log("operation ending") 
-      }
-      else{
-   console.log("i have looped" + " times")
-      }
-   
-   }
-   
-
-
-  
-
         </script>
