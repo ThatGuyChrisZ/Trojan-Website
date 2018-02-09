@@ -40,6 +40,8 @@
    var oldnum = 1;
    var newreader= 2;
    var results;
+   var results2;
+   var results3;
    
 
 
@@ -69,5 +71,15 @@ html = result3
                
    });
 }
+   }
+   setInterval(myfunc3, 500);
+   function myfunc3(){
+   var para = document.createElement("p");
+   var element = document.getElementById("testing");
+   
+      para.innerHTML = name + ": " + html;
+     
+      element.appendChild(para);
+      console.log("child added")
    }
         </script>
