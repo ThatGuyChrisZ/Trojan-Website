@@ -79,15 +79,15 @@ html = result3
    
    function myfunc3(){
       if(html !== undefined){
-         var hr1 = document.createElement("hl");
+         var hr1 = document.createElement("hr");
    var para = document.createElement("p");
-         var hr2 = document.createElement("hl");
+         var hr2 = document.createElement("hr");
    var element = document.getElementById("testing");
    
       para.innerHTML = name + ": " + html;
-     element.appendChild(hl1);
+     element.appendChild(hr1);
       element.appendChild(para);
-         element.appendChild(hl2);
+         element.appendChild(hr2);
       console.log("child added")
    }
       else{console.log("Caught Html variable as undefined")}
