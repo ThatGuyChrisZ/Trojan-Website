@@ -73,6 +73,10 @@ html = result3
 }
    }
    setInterval(myfunc3, 500);
+   if(!html){
+   console.log("Error Caught: Html not found")
+   }
+   else{
    function myfunc3(){
    var para = document.createElement("p");
    var element = document.getElementById("testing");
@@ -81,5 +85,6 @@ html = result3
      
       element.appendChild(para);
       console.log("child added")
+   }
    }
         </script>
