@@ -2,7 +2,7 @@
    <head>
        <meta charset = "UTF-8">
        <title>Trojan Coding  Hub</title>
-       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">    </script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">    </script>
     </head>
     <link rel="stylesheet" type="text/css" href="hps.css">
 </html>
@@ -26,13 +26,74 @@
 </div>
 <div id = "mb" class = "mb">
     <left> <input type = "submit" id = "menue1" value = "Close"></left>
-    <p> test </p>
+    <p id = "testing"> Content Loading.... </p>
 </div>
 <script src = "myscript.js">
    
         </script>
 <script>
-            $.ajax("https://docs.google.com/spreadsheet/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&single=true&gid=0&range=b5&output=csv").done(function(result){
-                alert(result);
+        var name;  
+   var html;
+   var loop = 1;
+   var bc = 2;
+   var idnum = 2;
+   var oldnum = 1;
+   var newreader= 2;
+   var results;
+   var results2;
+   var results3;
+   
+
+
+   setInterval(myfunction98, 300);
+   function myfunction98(){
+      
+   
+            $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=d"+newreader+"&output=csv").done(function(result){
+results = result
+                console.log(result);
+               console.log(bc)
             });
+if (results === "Footer"){
+         
+    $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=c"+newreader+"&output=csv").done(function(result2){
+name = result2
+       console.log(name);
+                
+               
+
+
+            });
+   $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=e"+newreader+"&output=csv").done(function(result3){
+html = result3
+       console.log(html);
+                
+               
+   });
+}
+      newreader++
+      console.log("I am at result #" + newreader)
+   }
+   setInterval(myfunc3, 500);
+   
+   
+   
+   function myfunc3(){
+      if(html !== undefined){
+         if (html !== " "){
+         var hr1 = document.createElement("hr");
+   var para = document.createElement("pre");
+         var hr2 = document.createElement("hr");
+   var element = document.getElementById("testing");
+   
+      para.innerHTML = name + ": " + html + " Source:" + "<xmp>"  +html+ "</xmp>";
+     element.appendChild(hr1);
+      element.appendChild(para);
+         element.appendChild(hr2);
+      console.log("child added")
+      }
+      }
+   
+   
+   }
         </script>
