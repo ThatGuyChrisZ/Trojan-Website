@@ -42,6 +42,7 @@
    var results;
    var results2;
    var results3;
+   var ifcheck;
    
 
 
@@ -51,10 +52,12 @@
    
             $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=d"+newreader+"&output=csv").done(function(result){
 results = result
+              
                 console.log(result);
+                ifcheck = result;
                console.log(bc)
             });
-if (results === "Svg"){
+if (ifcheck === "Button"){
          
     $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=c"+newreader+"&output=csv").done(function(result2){
 name = result2
@@ -74,13 +77,15 @@ html = result3
       newreader++
       console.log("I am at result #" + newreader)
    }
-   setInterval(myfunc3, 500);
+   setInterval(myfunc3, 350);
    
    
    
    function myfunc3(){
       if(html !== undefined){
          if (html !== " "){
+         if(results !== undefined){
+            if(results === "Svg"){
          var hr1 = document.createElement("hr");
    var para = document.createElement("pre");
          var hr2 = document.createElement("hr");
@@ -91,6 +96,8 @@ html = result3
       element.appendChild(para);
          element.appendChild(hr2);
       console.log("child added")
+            }
+         }
       }
       }
    
