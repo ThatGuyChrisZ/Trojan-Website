@@ -46,7 +46,7 @@
    
 
 
-   setInterval(myfunction98, 500);
+   setInterval(myfunction98, 300);
    function myfunction98(){
       
    
@@ -57,7 +57,7 @@ results = result
                 ifcheck = result;
                console.log(bc)
             });
-if (results === "Header"){
+if (ifcheck === "Header"){
          
     $.ajax("https://docs.google.com/spreadsheets/d/e/2PACX-1vRr69DydgbYz8j0bmJUMM152my64IL4s_CoVaamBU_iBbEQJ1WRxRUtbbAxDoWWRXGYvS-gj2oWqK2s/pub?key=0Auwt3KepmdoudE1iZFVFYmlQclcxbW85YzNZSTYyUHc&range=c"+newreader+"&output=csv").done(function(result2){
 name = result2
@@ -77,7 +77,7 @@ html = result3
       newreader++
       console.log("I am at result #" + newreader)
    }
-   setInterval(myfunc3, 700);
+   setInterval(myfunc3, 500);
    
    
    
